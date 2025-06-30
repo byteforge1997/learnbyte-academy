@@ -55,21 +55,21 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(26, 35, 126, 0.98);
+  backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 3000;
-  box-shadow: 0 2px 20px var(--shadow);
+  box-shadow: 0 2px 20px rgba(26,35,126,0.12);
   transition: all 0.3s ease;
 }
 
 .logo {
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--deep-navy);
+  color: #fff;
   letter-spacing: 1px;
   text-decoration: none;
 }
@@ -83,7 +83,7 @@ img {
 }
 
 .nav-links li a {
-  color: var(--dark-text);
+  color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
@@ -104,7 +104,7 @@ img {
 }
 
 .nav-links li a:hover {
-  color: var(--vibrant-teal);
+  color: var(--turquoise);
 }
 
 .nav-links li a:hover::after {
@@ -114,7 +114,7 @@ img {
 .nav-toggle {
   display: none;
   font-size: 1.5rem;
-  color: var(--dark-text);
+  color: #fff;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -126,7 +126,7 @@ img {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--deep-navy) 0%, #2C3E50 100%);
+  background: linear-gradient(135deg, #1A237E 0%, #2C3E50 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -146,8 +146,8 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-  opacity: 0.3;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+  opacity: 0.25;
 }
 
 .hero-content {
@@ -156,8 +156,13 @@ img {
   max-width: 800px;
 }
 
+.hero-content h1,
+.hero-content h2,
+.tagline {
+  color: #fff;
+}
+
 .hero-content h1 {
-  color: var(--soft-white);
   font-size: 4rem;
   font-weight: 800;
   margin-bottom: 1rem;
@@ -166,7 +171,6 @@ img {
 
 .tagline {
   font-size: 1.4rem;
-  color: var(--turquoise);
   font-weight: 600;
   margin: 1.5rem 0;
   letter-spacing: 0.5px;
@@ -174,7 +178,6 @@ img {
 }
 
 .hero-content h2 {
-  color: var(--soft-white);
   font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -182,30 +185,26 @@ img {
 }
 
 .hero-content p {
-  color: rgba(245, 247, 250, 0.9);
+  color: rgba(245,247,250,0.92);
   font-size: 1.1rem;
   margin-bottom: 3rem;
   animation: fadeInUp 1s ease 0.6s both;
 }
 
-.cta-btn {
-  display: inline-block;
+.cta-btn, .buy-btn, .contact-form button {
   background: linear-gradient(135deg, var(--vibrant-teal), var(--turquoise));
-  color: white;
-  padding: 1rem 2.5rem;
+  color: #fff;
   border-radius: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 128, 128, 0.3);
-  animation: fadeInUp 1s ease 0.8s both;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(0,128,128,0.25);
+  transition: all 0.3s;
 }
 
-.cta-btn:hover {
+.cta-btn:hover, .buy-btn:hover:enabled, .contact-form button:hover {
+  background: linear-gradient(135deg, var(--turquoise), var(--vibrant-teal));
+  color: #fff;
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(0, 128, 128, 0.4);
-  color: white;
+  box-shadow: 0 8px 30px rgba(0,128,128,0.35);
 }
 
 /* Section Styles */
@@ -215,7 +214,7 @@ section {
 
 section h2 {
   text-align: center;
-  color: var(--deep-navy);
+  color: #fff;
   margin-bottom: 3rem;
   position: relative;
 }
@@ -234,7 +233,7 @@ section h2::after {
 
 /* Courses Section */
 .courses {
-  background: white;
+  background: #181F3A;
 }
 
 .courses-list {
@@ -245,18 +244,13 @@ section h2::after {
   margin: 0 auto;
 }
 
-.course-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 10px 40px var(--shadow);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
-  overflow: hidden;
+.course-card, .pricing-card, .challenge-card, .resource-item, .contact-form, .dropdown-menu {
+  background: #232B4A;
+  color: #fff;
+  box-shadow: 0 10px 40px rgba(26,35,126,0.10);
 }
 
-.course-card::before {
+.course-card::before, .pricing-card::before, .challenge-card::before {
   content: '';
   position: absolute;
   top: 0;
@@ -266,7 +260,7 @@ section h2::after {
   background: linear-gradient(135deg, var(--vibrant-teal), var(--turquoise));
 }
 
-.course-card:hover {
+.course-card:hover, .pricing-card:hover, .challenge-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 60px var(--shadow-hover);
 }
@@ -277,13 +271,13 @@ section h2::after {
   color: var(--vibrant-teal);
 }
 
-.course-card h3 {
-  color: var(--deep-navy);
+.course-card h3, .pricing-card h3, .challenge-card h3 {
+  color: var(--turquoise);
   margin-bottom: 1rem;
   font-size: 1.5rem;
 }
 
-.course-card p {
+.course-card p, .pricing-card p, .challenge-card p {
   color: var(--light-text);
   margin-bottom: 1.5rem;
   line-height: 1.6;
@@ -354,7 +348,7 @@ section h2::after {
 
 /* Pricing Section */
 .pricing {
-  background: white;
+  background: #181F3A;
 }
 
 .pricing-models {
@@ -366,30 +360,14 @@ section h2::after {
 }
 
 .pricing-card {
-  background: white;
-  border-radius: 20px;
   padding: 3rem 2rem;
-  box-shadow: 0 10px 40px var(--shadow);
-  transition: all 0.3s ease;
-  border: 2px solid transparent;
-  position: relative;
+  border-radius: 20px;
   text-align: center;
-}
-
-.pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px var(--shadow-hover);
-  border-color: var(--vibrant-teal);
 }
 
 .pricing-card.disabled {
   opacity: 0.7;
   background: var(--soft-white);
-}
-
-.pricing-card h3 {
-  color: var(--deep-navy);
-  margin-bottom: 1rem;
 }
 
 .coming-soon {
@@ -401,7 +379,7 @@ section h2::after {
 
 .price {
   font-size: 3rem;
-  color: var(--vibrant-teal);
+  color: var(--turquoise);
   font-weight: 800;
   margin: 1.5rem 0;
 }
@@ -429,38 +407,13 @@ section h2::after {
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--vibrant-teal);
+  color: var(--turquoise);
   font-weight: bold;
-}
-
-.buy-btn {
-  background: linear-gradient(135deg, var(--vibrant-teal), var(--turquoise));
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 1rem 2.5rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 128, 128, 0.3);
-  width: 100%;
-}
-
-.buy-btn:hover:enabled {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(0, 128, 128, 0.4);
-}
-
-.buy-btn:disabled {
-  background: var(--light-text);
-  cursor: not-allowed;
-  box-shadow: none;
 }
 
 /* Resources Section */
 .resources {
-  background: var(--soft-white);
+  background: #181F3A;
 }
 
 .resources-list {
@@ -472,23 +425,18 @@ section h2::after {
 }
 
 .resource-item {
-  background: white;
-  border-radius: 15px;
-  padding: 1.5rem;
-  box-shadow: 0 5px 20px var(--shadow);
-  transition: all 0.3s ease;
   display: flex;
   align-items: center;
   gap: 1rem;
   text-decoration: none;
-  color: var(--dark-text);
+  color: var(--light-text);
 }
 
 .resource-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px var(--shadow-hover);
-  background: var(--vibrant-teal);
-  color: white;
+  background: var(--turquoise);
+  color: #fff;
 }
 
 .resource-item a {
@@ -499,7 +447,7 @@ section h2::after {
 
 /* Challenges Section */
 .challenges {
-  background: white;
+  background: #181F3A;
 }
 
 .challenges-list {
@@ -508,41 +456,6 @@ section h2::after {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.challenge-card {
-  background: white;
-  border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 10px 40px var(--shadow);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  position: relative;
-}
-
-.challenge-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(135deg, var(--mustard), var(--coral));
-}
-
-.challenge-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 60px var(--shadow-hover);
-}
-
-.challenge-card h3 {
-  color: var(--deep-navy);
-  margin-bottom: 1rem;
-}
-
-.challenge-card p {
-  color: var(--light-text);
-  margin-bottom: 1.5rem;
 }
 
 /* Team Section */
@@ -577,7 +490,7 @@ section h2::after {
   height: 100px;
   border-radius: 50%;
   margin: 0 auto 1.5rem;
-  border: 4px solid var(--vibrant-teal);
+  border: 4px solid var(--turquoise);
   object-fit: cover;
 }
 
@@ -593,7 +506,7 @@ section h2::after {
 
 /* Contact Section */
 .contact {
-  background: white;
+  background: #181F3A;
 }
 
 .contact-form {
@@ -607,10 +520,10 @@ section h2::after {
 .contact-form input,
 .contact-form textarea {
   padding: 1rem 1.5rem;
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  border: 2px solid #2C3E50;
   border-radius: 15px;
-  background: var(--soft-white);
-  color: var(--dark-text);
+  background: #232B4A;
+  color: #fff;
   font-size: 1rem;
   font-family: inherit;
   transition: all 0.3s ease;
@@ -620,26 +533,12 @@ section h2::after {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--vibrant-teal);
-  box-shadow: 0 0 0 3px rgba(0, 128, 128, 0.1);
+  border-color: var(--turquoise);
+  box-shadow: 0 0 0 3px rgba(64,224,208,0.10);
 }
 
 .contact-form button {
-  background: linear-gradient(135deg, var(--vibrant-teal), var(--turquoise));
-  color: white;
-  border: none;
-  border-radius: 50px;
   padding: 1rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 128, 128, 0.3);
-}
-
-.contact-form button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(0, 128, 128, 0.4);
 }
 
 .contact-info {
@@ -650,7 +549,7 @@ section h2::after {
 }
 
 .contact-info a {
-  color: var(--vibrant-teal);
+  color: var(--turquoise);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -660,14 +559,14 @@ section h2::after {
 }
 
 .contact-info a:hover {
-  color: var(--deep-navy);
+  color: var(--vibrant-teal);
   background: rgba(0, 128, 128, 0.2);
 }
 
 /* Footer */
 .footer {
-  background: var(--deep-navy);
-  color: rgba(245, 247, 250, 0.8);
+  background: #181F3A;
+  color: #fff;
   text-align: center;
   padding: 3rem 2rem 2rem;
 }
@@ -688,6 +587,7 @@ section h2::after {
 @media (max-width: 768px) {
   .navbar {
     padding: 1rem;
+    background: rgba(26, 35, 126, 0.98);
   }
   
   .nav-links {
@@ -696,7 +596,7 @@ section h2::after {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: #232B4A;
     flex-direction: column;
     padding: 2rem;
     box-shadow: 0 10px 30px var(--shadow);
@@ -765,8 +665,8 @@ section h2::after {
   top: 100%;
   left: 0;
   min-width: 220px;
-  background: rgba(255,255,255,0.97);
-  box-shadow: 0 8px 32px rgba(30,36,60,0.12);
+  background: #232B4A;
+  box-shadow: 0 8px 32px rgba(26,35,126,0.18);
   border-radius: 12px;
   padding: 1rem 0.5rem;
   z-index: 2000;
@@ -790,7 +690,7 @@ section h2::after {
 .dropdown-menu a {
   display: block;
   padding: 0.6rem 1.2rem;
-  color: var(--dark-text);
+  color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: 500;
