@@ -1,0 +1,340 @@
+<<<<<<< HEAD
+{
+    "websiteTitle": "Space Tourism",
+    "navigation": [
+      {
+        "id": "home",
+        "label": "HOME",
+        "path": "/"
+      },
+      {
+        "id": "destination",
+        "label": "DESTINATION",
+        "path": "/destination"
+      },
+      {
+        "id": "crew",
+        "label": "CREW",
+        "path": "/crew"
+      },
+      {
+        "id": "technology",
+        "label": "TECHNOLOGY",
+        "path": "/technology"
+      }
+    ],
+    "pages": [
+      {
+        "id": "home",
+        "title": "So, you want to travel to SPACE",
+        "subtitle": "Let's face it: if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!",
+        "heroImage": "path/to/x8skdsukkmwiwxejthio.webp",
+        "callToAction": {
+          "text": "EXPLORE",
+          "link": "/destination"
+        },
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "destination",
+        "title": "PICK YOUR DESTINATION",
+        "destinations": [
+          {
+            "name": "MARS",
+            "image": "path/to/ked7tofbhsjariwvtdar.webp",
+            "description": "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!",
+            "avgDistance": "225 MIL. KM",
+            "estTravelTime": "9 MONTHS"
+          },
+          {
+            "name": "MOON",
+            "image": "path/to/moon_image.webp",
+            "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+            "avgDistance": "384,400 KM",
+            "estTravelTime": "3 DAYS"
+          },
+          {
+            "name": "EUROPA",
+            "image": "path/to/europa_image.webp",
+            "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter wonderland with an icy surface, perfect for a bit of ice skating, curling, hockey, or just relaxing in your snug winter gear.",
+            "avgDistance": "628 MIL. KM",
+            "estTravelTime": "3 YEARS"
+          },
+          {
+            "name": "TITAN",
+            "image": "path/to/titan_image.webp",
+            "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (and a few hundred degrees colder!). As a bonus, you can get a glimpse of the rings of Saturn.",
+            "avgDistance": "1.6 BIL. KM",
+            "estTravelTime": "7 YEARS"
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "crew",
+        "title": "MEET YOUR CREW",
+        "crewMembers": [
+          {
+            "role": "FLIGHT ENGINEER",
+            "name": "ANOUSHEH ANSARI",
+            "image": "path/to/ibsdrpfjuxoaqopqmrdo.webp",
+            "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+          },
+          {
+            "role": "COMMANDER",
+            "name": "DOUGLAS HURLEY",
+            "image": "path/to/douglas_hurley_image.webp",
+            "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+          },
+          {
+            "role": "PILOT",
+            "name": "VICTOR GLOVER",
+            "image": "path/to/victor_glover_image.webp",
+            "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon, Victor J. Glover is a NASA astronaut, engineer, and lieutenant commander in the U.S. Navy."
+          },
+          {
+            "role": "SPACE SPECIALIST",
+            "name": "ANOUSHEH ANSARI",
+            "image": "path/to/anousheh_ansari_specialist_image.webp",
+            "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "technology",
+        "title": "SPACE LAUNCH 101",
+        "technologies": [
+          {
+            "number": "1",
+            "term": "LAUNCH VEHICLE",
+            "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+            "image": "path/to/ej22bxlz3aspkscujomq.webp"
+          },
+          {
+            "number": "2",
+            "term": "SPACEPORT",
+            "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy with a seaport or airport. The Cape Canaveral Space Force Station is a US space launch site in Florida which hosts rocket launches by the United States Space Force, NASA, and other companies.",
+            "image": "path/to/spaceport_image.webp"
+          },
+          {
+            "number": "3",
+            "term": "SPACE CAPSULE",
+            "description": "A space capsule is an often-crewed spacecraft or satellite that uses a blunt-body re-entry capsule to re-enter Earth's atmosphere without wings. Our capsule is designed to take you on a journey to the moon and beyond. It can hold a crew of four astronauts.",
+            "image": "path/to/space_capsule_image.webp"
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      }
+    ],
+    "globalStyle": {
+      "bodyBackgroundColor": "#0A0B1A",
+      "primaryTextColor": "#FFFFFF",
+      "secondaryTextColor": "#D0D6F9",
+      "primaryFontFamily": "'Bellefair', serif",
+      "secondaryFontFamily": "'Barlow Condensed', sans-serif",
+      "heading1FontSize": "150px",
+      "heading2FontSize": "100px",
+      "heading3FontSize": "56px",
+      "heading4FontSize": "32px",
+      "heading5FontSize": "28px",
+      "navTextFontSize": "16px",
+      "subheading1FontSize": "28px",
+      "subheading2FontSize": "14px",
+      "paragraphFontSize": "18px",
+      "dotNavigationColor": "#FFFFFF",
+      "activeDotNavigationColor": "#FFFFFF",
+      "inactiveDotNavigationOpacity": "0.17",
+      "lineColor": "#383B4B"
+    }
+=======
+{
+    "websiteTitle": "Space Tourism",
+    "navigation": [
+      {
+        "id": "home",
+        "label": "HOME",
+        "path": "/"
+      },
+      {
+        "id": "destination",
+        "label": "DESTINATION",
+        "path": "/destination"
+      },
+      {
+        "id": "crew",
+        "label": "CREW",
+        "path": "/crew"
+      },
+      {
+        "id": "technology",
+        "label": "TECHNOLOGY",
+        "path": "/technology"
+      }
+    ],
+    "pages": [
+      {
+        "id": "home",
+        "title": "So, you want to travel to SPACE",
+        "subtitle": "Let's face it: if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!",
+        "heroImage": "path/to/x8skdsukkmwiwxejthio.webp",
+        "callToAction": {
+          "text": "EXPLORE",
+          "link": "/destination"
+        },
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "destination",
+        "title": "PICK YOUR DESTINATION",
+        "destinations": [
+          {
+            "name": "MARS",
+            "image": "path/to/ked7tofbhsjariwvtdar.webp",
+            "description": "Don't forget to pack your hiking boots. You'll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It's two and a half times the size of Everest!",
+            "avgDistance": "225 MIL. KM",
+            "estTravelTime": "9 MONTHS"
+          },
+          {
+            "name": "MOON",
+            "image": "path/to/moon_image.webp",
+            "description": "See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.",
+            "avgDistance": "384,400 KM",
+            "estTravelTime": "3 DAYS"
+          },
+          {
+            "name": "EUROPA",
+            "image": "path/to/europa_image.webp",
+            "description": "The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter wonderland with an icy surface, perfect for a bit of ice skating, curling, hockey, or just relaxing in your snug winter gear.",
+            "avgDistance": "628 MIL. KM",
+            "estTravelTime": "3 YEARS"
+          },
+          {
+            "name": "TITAN",
+            "image": "path/to/titan_image.webp",
+            "description": "The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (and a few hundred degrees colder!). As a bonus, you can get a glimpse of the rings of Saturn.",
+            "avgDistance": "1.6 BIL. KM",
+            "estTravelTime": "7 YEARS"
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "crew",
+        "title": "MEET YOUR CREW",
+        "crewMembers": [
+          {
+            "role": "FLIGHT ENGINEER",
+            "name": "ANOUSHEH ANSARI",
+            "image": "path/to/ibsdrpfjuxoaqopqmrdo.webp",
+            "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+          },
+          {
+            "role": "COMMANDER",
+            "name": "DOUGLAS HURLEY",
+            "image": "path/to/douglas_hurley_image.webp",
+            "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
+          },
+          {
+            "role": "PILOT",
+            "name": "VICTOR GLOVER",
+            "image": "path/to/victor_glover_image.webp",
+            "bio": "Pilot on the first operational flight of the SpaceX Crew Dragon, Victor J. Glover is a NASA astronaut, engineer, and lieutenant commander in the U.S. Navy."
+          },
+          {
+            "role": "SPACE SPECIALIST",
+            "name": "ANOUSHEH ANSARI",
+            "image": "path/to/anousheh_ansari_specialist_image.webp",
+            "bio": "Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space."
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      },
+      {
+        "id": "technology",
+        "title": "SPACE LAUNCH 101",
+        "technologies": [
+          {
+            "number": "1",
+            "term": "LAUNCH VEHICLE",
+            "description": "A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite an awe-inspiring sight on the launch pad!",
+            "image": "path/to/ej22bxlz3aspkscujomq.webp"
+          },
+          {
+            "number": "2",
+            "term": "SPACEPORT",
+            "description": "A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy with a seaport or airport. The Cape Canaveral Space Force Station is a US space launch site in Florida which hosts rocket launches by the United States Space Force, NASA, and other companies.",
+            "image": "path/to/spaceport_image.webp"
+          },
+          {
+            "number": "3",
+            "term": "SPACE CAPSULE",
+            "description": "A space capsule is an often-crewed spacecraft or satellite that uses a blunt-body re-entry capsule to re-enter Earth's atmosphere without wings. Our capsule is designed to take you on a journey to the moon and beyond. It can hold a crew of four astronauts.",
+            "image": "path/to/space_capsule_image.webp"
+          }
+        ],
+        "style": {
+          "backgroundColor": "#0A0B1A",
+          "textColor": "#FFFFFF",
+          "fontFamily": "'Bellefair', serif",
+          "headingFontFamily": "'Barlow Condensed', sans-serif"
+        }
+      }
+    ],
+    "globalStyle": {
+      "bodyBackgroundColor": "#0A0B1A",
+      "primaryTextColor": "#FFFFFF",
+      "secondaryTextColor": "#D0D6F9",
+      "primaryFontFamily": "'Bellefair', serif",
+      "secondaryFontFamily": "'Barlow Condensed', sans-serif",
+      "heading1FontSize": "150px",
+      "heading2FontSize": "100px",
+      "heading3FontSize": "56px",
+      "heading4FontSize": "32px",
+      "heading5FontSize": "28px",
+      "navTextFontSize": "16px",
+      "subheading1FontSize": "28px",
+      "subheading2FontSize": "14px",
+      "paragraphFontSize": "18px",
+      "dotNavigationColor": "#FFFFFF",
+      "activeDotNavigationColor": "#FFFFFF",
+      "inactiveDotNavigationOpacity": "0.17",
+      "lineColor": "#383B4B"
+    }
+>>>>>>> fe1e18f (Initial commit - ByteForge website)
+  }

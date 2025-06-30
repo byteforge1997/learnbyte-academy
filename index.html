@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ByteForge - Master cybersecurity, programming, and computer science with expert-led courses, hands-on challenges, and digital certificates.">
+  <title>ByteForge - Cybersecurity, Programming & Computer Science Education</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">ByteForge</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li class="dropdown">
+        <a href="#resources">Resources</a>
+        <ul class="dropdown-menu">
+          <li><a href="#books">Top 10 Cybersecurity Books</a></li>
+          <li><a href="#tools">Useful Security Tools</a></li>
+          <li><a href="#articles">Programming Articles</a></li>
+        </ul>
+      </li>
+      <li><a href="#challenges">Challenges</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li class="dropdown lang-dropdown">
+        <button id="langBtn">🌐 Language</button>
+        <ul class="dropdown-menu lang-menu">
+          <li><a href="#" data-lang="en">English</a></li>
+          <li><a href="#" data-lang="ar">العربية</a></li>
+          <li><a href="#" data-lang="fr">Français</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>ByteForge</h1>
+      <div class="tagline">Forge Your Digital Future: Master Code, Conquer Cyber, Innovate with AI.</div>
+      <h2>Cybersecurity, Programming & Computer Science Education</h2>
+      <p>Your trusted platform for learning ethical hacking, programming, and advanced computer science. Build your skills with expert-led courses, resources, and hands-on challenges.</p>
+      <a href="#courses" class="cta-btn">Browse Courses</a>
+    </div>
+  </header>
+
+  <!-- Courses Section EN -->
+  <section class="courses lang-en" id="courses">
+    <h2>Courses</h2>
+    <div class="courses-list">
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-lock"></span></div>
+        <h3>Ethical Hacking 101</h3>
+        <p>Learn the fundamentals of ethical hacking, penetration testing, and cyber defense.<span class="difficulty beginner">Beginner</span></p>
+        <div class="course-tech">Python, Kali Linux</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-code"></span></div>
+        <h3>Programming with Python</h3>
+        <p>Master Python for automation, web development, and security scripting.<span class="difficulty intermediate">Intermediate</span></p>
+        <div class="course-tech">Python, Flask</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-network"></span></div>
+        <h3>Computer Networks</h3>
+        <p>Understand networking essentials, protocols, and security.<span class="difficulty advanced">Advanced</span></p>
+        <div class="course-tech">TCP/IP, Wireshark</div>
+      </div>
+    </div>
+  </section>
+  <!-- Courses Section AR -->
+  <section class="courses lang-ar" id="courses" style="display:none">
+    <h2>الدورات</h2>
+    <div class="courses-list">
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-lock"></span></div>
+        <h3>الاختراق الأخلاقي 101</h3>
+        <p>تعلم أساسيات الاختراق الأخلاقي، واختبار الاختراق، والدفاع السيبراني.<span class="difficulty beginner">مبتدئ</span></p>
+        <div class="course-tech">بايثون، كالي لينكس</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-code"></span></div>
+        <h3>البرمجة ببايثون</h3>
+        <p>إتقان بايثون للأتمتة، وتطوير الويب، وبرمجة السكريبتات الأمنية.<span class="difficulty intermediate">متوسط</span></p>
+        <div class="course-tech">بايثون، فلاسـك</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-network"></span></div>
+        <h3>شبكات الحاسوب</h3>
+        <p>فهم أساسيات الشبكات، البروتوكولات، وأمن الشبكات.<span class="difficulty advanced">متقدم</span></p>
+        <div class="course-tech">TCP/IP، وايرشارك</div>
+      </div>
+    </div>
+  </section>
+  <!-- Courses Section FR -->
+  <section class="courses lang-fr" id="courses" style="display:none">
+    <h2>Cours</h2>
+    <div class="courses-list">
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-lock"></span></div>
+        <h3>Piratage Éthique 101</h3>
+        <p>Apprenez les bases du piratage éthique, des tests de pénétration et de la défense cybernétique.<span class="difficulty beginner">Débutant</span></p>
+        <div class="course-tech">Python, Kali Linux</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-code"></span></div>
+        <h3>Programmation avec Python</h3>
+        <p>Maîtrisez Python pour l'automatisation, le développement web et les scripts de sécurité.<span class="difficulty intermediate">Intermédiaire</span></p>
+        <div class="course-tech">Python, Flask</div>
+      </div>
+      <div class="course-card">
+        <div class="course-icon"><span class="icon-network"></span></div>
+        <h3>Réseaux Informatiques</h3>
+        <p>Comprendre les bases des réseaux, des protocoles et de la sécurité.<span class="difficulty advanced">Avancé</span></p>
+        <div class="course-tech">TCP/IP, Wireshark</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates" id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-info">
+      <p>Upon successful completion of any course, you will receive a digital certificate featuring:</p>
+      <ul>
+        <li><strong>ByteForge</strong> (platform name)</li>
+        <li><strong>Student Name</strong></li>
+        <li><strong>Course Title</strong></li>
+        <li><strong>Date of Completion</strong></li>
+      </ul>
+      <p>Certificates are verifiable and can be shared on your professional profiles.</p>
+    </div>
+  </section>
+
+  <!-- Pricing Section EN -->
+  <section class="pricing lang-en" id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-models">
+      <div class="pricing-card">
+        <h3>Course Purchase</h3>
+        <p>Buy individual courses and get lifetime access.</p>
+        <div class="price">$49 <span>/ course</span></div>
+        <ul>
+          <li>Access to all course materials</li>
+          <li>Certificate upon completion</li>
+          <li>Community support</li>
+        </ul>
+        <button class="buy-btn">Purchase Course</button>
+      </div>
+      <div class="pricing-card disabled">
+        <h3>Premium Membership (Coming Soon)</h3>
+        <p>Unlimited access to all courses, exclusive resources, and more.</p>
+        <div class="price">TBA</div>
+        <ul>
+          <li>All Course Purchase benefits</li>
+          <li>Exclusive premium content</li>
+          <li>Early access to new courses</li>
+        </ul>
+        <button class="buy-btn" disabled>Coming Soon</button>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Section AR -->
+  <section class="pricing lang-ar" id="pricing" style="display:none">
+    <h2>الأسعار</h2>
+    <div class="pricing-models">
+      <div class="pricing-card">
+        <h3>شراء دورة</h3>
+        <p>شراء الدورات بشكل فردي مع وصول مدى الحياة.</p>
+        <div class="price">$49 <span>لكل دورة</span></div>
+        <ul>
+          <li>الوصول لجميع المواد</li>
+          <li>شهادة عند الإكمال</li>
+          <li>دعم المجتمع</li>
+        </ul>
+        <button class="buy-btn">شراء الدورة</button>
+      </div>
+      <div class="pricing-card disabled">
+        <h3>العضوية المميزة (قريباً)</h3>
+        <p>وصول غير محدود لكل الدورات، محتوى حصري، وصول مبكر لدورات جديدة.</p>
+        <div class="price">سيتم الإعلان لاحقاً</div>
+        <ul>
+          <li>جميع مزايا شراء الدورات</li>
+          <li>محتوى مميز حصري</li>
+          <li>وصول مبكر لدورات جديدة</li>
+        </ul>
+        <button class="buy-btn" disabled>قريباً</button>
+      </div>
+    </div>
+  </section>
+  <!-- Pricing Section FR -->
+  <section class="pricing lang-fr" id="pricing" style="display:none">
+    <h2>Tarification</h2>
+    <div class="pricing-models">
+      <div class="pricing-card">
+        <h3>Achat de Cours</h3>
+        <p>Achetez des cours individuels et obtenez un accès à vie.</p>
+        <div class="price">$49 <span>/ cours</span></div>
+        <ul>
+          <li>Accès à tous les supports de cours</li>
+          <li>Certificat à la fin</li>
+          <li>Soutien de la communauté</li>
+        </ul>
+        <button class="buy-btn">Acheter le cours</button>
+      </div>
+      <div class="pricing-card disabled">
+        <h3>Abonnement Premium (Bientôt)</h3>
+        <p>Accès illimité à tous les cours, ressources exclusives, et plus encore.</p>
+        <div class="price">À venir</div>
+        <ul>
+          <li>Tous les avantages de l'achat de cours</li>
+          <li>Contenu premium exclusif</li>
+          <li>Accès anticipé aux nouveaux cours</li>
+        </ul>
+        <button class="buy-btn" disabled>Bientôt</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources Section EN -->
+  <section class="resources lang-en" id="resources">
+    <h2>Resources</h2>
+    <div class="resources-list">
+      <div class="resource-item"><span class="icon-book"></span> <a href="#">Top 10 Cybersecurity Books</a></div>
+      <div class="resource-item"><span class="icon-link"></span> <a href="#">Useful Security Tools</a></div>
+      <div class="resource-item"><span class="icon-article"></span> <a href="#">Programming Articles</a></div>
+    </div>
+  </section>
+  <!-- Resources Section AR -->
+  <section class="resources lang-ar" id="resources" style="display:none">
+    <h2>الموارد</h2>
+    <div class="resources-list">
+      <div class="resource-item"><span class="icon-book"></span> <a href="#">أفضل 10 كتب في الأمن السيبراني</a></div>
+      <div class="resource-item"><span class="icon-link"></span> <a href="#">أدوات أمنية مفيدة</a></div>
+      <div class="resource-item"><span class="icon-article"></span> <a href="#">مقالات برمجية</a></div>
+    </div>
+  </section>
+  <!-- Resources Section FR -->
+  <section class="resources lang-fr" id="resources" style="display:none">
+    <h2>Ressources</h2>
+    <div class="resources-list">
+      <div class="resource-item"><span class="icon-book"></span> <a href="#">Top 10 des livres sur la cybersécurité</a></div>
+      <div class="resource-item"><span class="icon-link"></span> <a href="#">Outils de sécurité utiles</a></div>
+      <div class="resource-item"><span class="icon-article"></span> <a href="#">Articles de programmation</a></div>
+    </div>
+  </section>
+
+  <!-- Challenges Section EN -->
+  <section class="challenges lang-en" id="challenges">
+    <h2>Challenges & CTFs</h2>
+    <div class="challenges-list">
+      <div class="challenge-card">
+        <h3>Web Exploitation CTF</h3>
+        <p>Test your skills in web security with real-world scenarios.</p>
+        <span class="difficulty intermediate">Intermediate</span>
+      </div>
+      <div class="challenge-card">
+        <h3>Reverse Engineering</h3>
+        <p>Analyze binaries and crack simple protections in a safe environment.</p>
+        <span class="difficulty advanced">Advanced</span>
+      </div>
+    </div>
+  </section>
+  <!-- Challenges Section AR -->
+  <section class="challenges lang-ar" id="challenges" style="display:none">
+    <h2>التحديات والمسابقات</h2>
+    <div class="challenges-list">
+      <div class="challenge-card">
+        <h3>تحدي استغلال الويب</h3>
+        <p>اختبر مهاراتك في أمن الويب مع سيناريوهات واقعية.</p>
+        <span class="difficulty intermediate">متوسط</span>
+      </div>
+      <div class="challenge-card">
+        <h3>الهندسة العكسية</h3>
+        <p>حلل البرمجيات التنفيذية وكسر الحمايات البسيطة في بيئة آمنة.</p>
+        <span class="difficulty advanced">متقدم</span>
+      </div>
+    </div>
+  </section>
+  <!-- Challenges Section FR -->
+  <section class="challenges lang-fr" id="challenges" style="display:none">
+    <h2>Défis & CTFs</h2>
+    <div class="challenges-list">
+      <div class="challenge-card">
+        <h3>CTF Exploitation Web</h3>
+        <p>Testez vos compétences en sécurité web avec des scénarios réels.</p>
+        <span class="difficulty intermediate">Intermédiaire</span>
+      </div>
+      <div class="challenge-card">
+        <h3>Reverse Engineering</h3>
+        <p>Analysez des binaires et contournez des protections simples dans un environnement sécurisé.</p>
+        <span class="difficulty advanced">Avancé</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team/Experts Section -->
+  <section class="team" id="team">
+    <h2>Meet the Team</h2>
+    <div class="team-list">
+      <div class="team-member">
+        <img src="images/profile-placeholder.png" alt="Expert Photo" class="profile-photo">
+        <h3>Jane Doe</h3>
+        <p>Lead Ethical Hacker & Instructor</p>
+      </div>
+      <div class="team-member">
+        <img src="images/profile-placeholder.png" alt="Expert Photo" class="profile-photo">
+        <h3>John Smith</h3>
+        <p>Programming Expert & Author</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/profile-placeholder.png" alt="Profile Photo" class="profile-photo">
+      <p>Hello! I'm ByteForge, a passionate programmer dedicated to building robust and scalable software solutions. (Replace this with your bio.)</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <!-- Example skill icons -->
+      <div class="skill"><img src="images/icons/js.svg" alt="JavaScript"><span>JavaScript</span></div>
+      <div class="skill"><img src="images/icons/python.svg" alt="Python"><span>Python</span></div>
+      <div class="skill"><img src="images/icons/react.svg" alt="React"><span>React</span></div>
+      <div class="skill"><img src="images/icons/node.svg" alt="Node.js"><span>Node.js</span></div>
+      <!-- Add more as needed -->
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="projects-gallery">
+      <!-- Example project card -->
+      <div class="project-card">
+        <img src="images/projects/project1.jpg" alt="Project Screenshot">
+        <div class="project-info">
+          <h3>Project Title</h3>
+          <p>Short project description goes here.</p>
+          <div class="project-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+          </div>
+          <div class="project-tech">React, Node.js</div>
+        </div>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <h2>Experience</h2>
+    <div class="experience-list">
+      <div class="experience-item">
+        <h3>Software Engineer at Company</h3>
+        <span>2022 - Present</span>
+        <p>Short description of your role and achievements.</p>
+      </div>
+      <!-- Add more experience items as needed -->
+    </div>
+  </section>
+
+  <!-- Contact Section EN -->
+  <section class="contact lang-en" id="contact">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+  </section>
+  <!-- Contact Section AR -->
+  <section class="contact lang-ar" id="contact" style="display:none">
+    <h2>تواصل معنا</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="اسمك" required>
+      <input type="email" name="email" placeholder="بريدك الإلكتروني" required>
+      <textarea name="message" placeholder="رسالتك" required></textarea>
+      <button type="submit">إرسال الرسالة</button>
+    </form>
+    <div class="contact-info">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="#" target="_blank">لينكدإن</a>
+      <a href="#" target="_blank">جيت هب</a>
+    </div>
+  </section>
+  <!-- Contact Section FR -->
+  <section class="contact lang-fr" id="contact" style="display:none">
+    <h2>Contact</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer le message</button>
+    </form>
+    <div class="contact-info">
+      <a href="mailto:your.email@example.com">your.email@example.com</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 ByteForge. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
